@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dollarconverter.css">
+    <link rel="stylesheet" href="calculator.html">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="doll">
+        <h1 >Currancy converter</h1>
+        <div class="converter">
+            <div class="rupee">
+                <label for="">Enter Here</label>
+                <input type="text" id="inputdata">
+            </div>
+
+
+
+            <div class="dollar">
+                <select id="select-option">
+                    <option value="Dollar">Dollar</option>
+                    <option value="Pound">Pound</option>
+                    <option value="Yank">Yank</option>
+                </select>
+                <span class="output" id="output">output</span>
+            </div>
+
+            <button class="btn" onclick="getValue()"> Convert</button>
+            <p><a href="calculator.html" class="btn"> Go back</a></p>
+        </div>
+    </div>
+
+
+
+    <script>
+
+        function getValue() {
+
+
+            var selectElement = document.getElementById("select-option");
+            var selectedValue = selectElement.value;
+
+            var data = document.getElementById("inputdata");
+            var data1 = data.value;
+
+            var data2 = parseInt(data1, 10);
+
+            if (Number.isInteger(data2)) {
+                if (!selectElement || !data1) {
+                    alert("insufficient data")
+                }
+                else {
+                    if (selectedValue === "Dollar") {
+                        let ans = parseInt(data2 / 100);
+                        var outputElement = document.getElementById("output");
+                        outputElement.textContent = "Answer: " + ans;
+                    }
+
+                    else if (selectedValue === "Pound") {
+                        let ans = parseInt(data2 / 50);
+                        var outputElement = document.getElementById("output");
+                        outputElement.textContent = "Answer: " + ans;
+                    }
+
+                    else if (selectedValue === "Yank") {
+                        let ans = parseInt(data2 / 70);
+                        var outputElement = document.getElementById("output");
+                        outputElement.textContent = "Answer: " + ans;
+
+                    }
+
+                }
+
+            } else {
+                alert("pleaase enter integer value");
+            }
+        }
+    </script>
+</body>
+
+</html>

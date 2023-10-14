@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="dollarconvert.html">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Arrz79I4WGnzbIOZi8GjkQFkwPSJA+y3yvkZVmSO0/c4oZpVtclTSpWZxREOwB9VNAyZuh0oHRiNiNl8U/vc8g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Document</title>
+</head>
+
+<body>
+
+    
+    
+    <div class="calculator">
+        <div class="main-calculator">
+            <div class="display" id="display">
+                <div class="display-num">
+                    <span class="output">0</span>
+                </div>
+
+            </div>
+            <div class="buttons">
+                <div class="rows">
+                    <button class="btn" onclick="appendToDisplay('7')">7</button>
+                    <button class="btn" onclick="appendToDisplay('8')">8</button>
+                    <button class="btn" onclick="appendToDisplay('9')">9</button>
+                    <button class="btn" onclick="appendToDisplay('+')">+</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn" onclick="appendToDisplay('4')">4</button>
+                    <button class="btn" onclick="appendToDisplay('5')">5</button>
+                    <button class="btn" onclick="appendToDisplay('6')">6</button>
+                    <button class="btn" onclick="appendToDisplay('-')">-</button>
+                </div>
+
+                <div class="rows">
+                    <button class="btn" onclick="appendToDisplay('1')">1</button>
+                    <button class="btn" onclick="appendToDisplay('2')">2</button>
+                    <button class="btn" onclick="appendToDisplay('3')">3</button>
+                    <button class="btn" onclick="appendToDisplay('*')">*</button>
+                </div>
+
+
+                <div class="rows">
+                    <button class="btn" onclick="appendToDisplay('0')">0</button>
+                    <button class="btn" onclick="clearDisplay()">C</button>       
+                    <button class="btn" onclick="appendToDisplay('/')">/</button>
+                    <button class="btn-eqaul" onclick="calculate()">=</button>
+                </div>
+                <div class="rows">
+                    <li><a href="dollarconvert.html" class="btn" >$</a></li> 
+                    <button class="btn" onclick="appendToDisplay('/')">%</button>
+                </div>
+
+
+               
+
+            </div>
+        </div>
+    </div>
+
+    <script src="calculator.js"></script>
+</body>
+
+</html>

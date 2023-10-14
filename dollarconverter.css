@@ -1,0 +1,144 @@
+body {
+    background-color: aqua;
+}
+
+.converter {
+    border: 2px solid black;
+    width: 300px;
+    height: 300px;
+    margin-left: 500px;
+    margin-top: 100px;
+    box-shadow: 10px 10px 10px red;
+    border: none;
+    background-color: white;
+}
+
+
+.rupee {
+    height: 100px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px red;
+    border: none;
+
+
+}
+
+.rupee label {
+    margin-top: 20px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+}
+
+
+.rupee input {
+    margin-top: 20px;
+    margin-left: 30px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border: none;
+}
+
+
+.dollar {
+
+
+    height: 100px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px red;
+    display: flex;
+    flex-direction: column;
+    border: none;
+
+}
+
+.dollar select {
+    width: 150px;
+    box-shadow: 5px 5px 5px black;
+    border-radius: 20px;
+    padding: 10px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    border: none;
+}
+
+
+.output {
+    margin-left: 100px;
+    margin-top: 30px;
+}
+
+
+span {
+    font-size: 20px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
+}
+
+h1{
+    color: green;
+    margin-left: 500px;
+    font-weight: 800;
+    margin-top: 100px;
+
+}
+
+
+
+.btn {
+    margin-left: 100px;
+    border-radius: 20px;
+    box-shadow: 10px 5px 5px black;
+    background-color: skyblue;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 800;
+    cursor: pointer;
+    padding: 10px;
+    border: none;
+}
+
+
+.btn button {
+    border: none;
+}
+
+a.btn {
+    text-decoration: none;
+}
+
+
+
+@media (max-width: 768px) {
+
+    .buttons button {
+        padding: 15px;
+        font-size: 18px;
+    }
+
+    .doll {
+        width: 100%;
+    }
+
+    .converter {
+        border: 2px solid black;
+        width: 300px;
+        height: 300px;
+        margin-left: 70px;
+        margin-top: 100px;
+        box-shadow: 10px 10px 10px red;
+        border: none;
+        background-color: white;
+    }
+
+    h1 {
+        color: green;
+        margin-left: 100px;
+        font-weight: 800;
+        margin-top: 100px;
+    }
+}
